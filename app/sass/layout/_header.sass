@@ -1,0 +1,154 @@
+.main-head
+  .container
+    display: flex
+
+.head-left
+  background-color: $accent-green
+  color: #fff
+  width: 265px
+  padding: 10px
+  text-align: center
+  display: flex
+  justify-content: center
+  align-items: center
+  img
+    margin-bottom: 10px
+  a
+    color: #fff
+
+.head-right
+  width: calc(100% - 265px)
+  padding-left: 45px
+
+.topline
+  display: flex
+  justify-content: flex-end
+  padding: 24px 0
+  border-bottom: 1px solid $accent-creamy
+  .vk-link
+    margin-left: 26px
+  .btn
+    padding: 15px 35px 13px
+    margin-left: 60px
+
+
+.vk-link
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  width: 47px
+  height: 47px
+  border: 1px solid #dfe1e5
+  border-radius: 50%
+  +mt(.3s)
+  .svg
+    width: 21px
+    height: auto
+    +mt(.3s)
+    fill: #b3b3bd
+  &:hover
+    background-color: $accent-green
+    border-color: $accent-green
+    .svg
+      fill: #fff
+
+.top-phones
+  position: relative
+  text-align: right
+  margin-left: 66px
+  &:before
+    content: ''
+    position: absolute
+    width: 14px
+    height: 14px
+    background-image: url('../img/icons/phone-icon.png')
+    +bg-cover
+    top: 1px
+    left: -22px
+  a
+    display: block
+    font-size: 20px
+    font-weight: 700
+    color: $text
+    margin-bottom: 11px
+    &:hover
+      color: $accent-green
+    &:last-child
+      margin-bottom: 0
+
+.top-data
+  width: 250px
+  margin-left: 60px
+  .address
+    margin-bottom: 10px
+  a
+    color: $accent-green
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+
+
+.main-mnu
+  ul
+    display: flex
+    padding: 19px 32px 17px
+    justify-content: space-around
+  a
+    color: $text
+    &:hover
+      color: $accent-green
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+  background-color: $accent-green
+
+.hamburger
+  padding: 0
+  margin-left: 40px
+  position: relative
+  top: 1px
+  display: none
+
+
+
+//mmenu customization start
+.mm-menu_theme-dark
+  background-color: $accent-green
+  text-transform: uppercase
+
+.mm-logo
+  display: block
+  margin: 0 auto
+  transform: scaleY(1)
+
+.mm-navbars_top
+  border-color: transparent
+
+.mm-listitem, .mm-listitem .mm-btn_next, .mm-listitem .mm-btn_next:before, .mm-listitem:after, .mm-listview
+  border-color: rgba(#fff, .3)
+
+.mm-listitem
+  a
+    padding-top: 14px
+    padding-bottom: 12px
+
+.mm-navbar
+  border: none
+
+.mm-navbars_top>.mm-navbar
+  align-items: center
+
+.mm-navbar_size-3
+  height: 100px
+
+.mm-menu_navbar_top-3 .mm-panels
+  top: 100px
+
+.mm-menu_theme-dark .mm-navbar a, .mm-menu_theme-dark .mm-navbar>*
+  font-size: 20px
+  color: #fff
+  letter-spacing: 2px
+
+.mm-menu_theme-dark .mm-listview a:not(.mm-btn_next)
+  color: #fff
+
+

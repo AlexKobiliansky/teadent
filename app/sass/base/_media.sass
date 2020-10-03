@@ -3,17 +3,121 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1350px)
+  .head-right
+    padding-left: 20px
+    font-size: 14px
+
+  .top-phones
+    margin-left: 40px
+    a
+      font-size: 16px
+      margin-bottom: 7px
+
 // ≥1200px
 +media-breakpoint-down(lg)
+  .head-left
+    width: 200px
+    padding: 5px
+    .desc
+      font-size: 13px
+
+  .head-right
+    width: calc(100% - 200px)
+
+  .mnu-line
+    display: none
+
+  .hamburger
+    display: block
+
+  .topline
+    justify-content: space-between
+    .vk-link
+      display: none
+    .btn-green
+      display: none
+
+  .top-data
+    margin-left: 30px
+    width: 210px
+    .address
+      margin-bottom: 7px
+
+  .top-phones
+    margin-left: 50px
 
 // ≥992px
 +media-breakpoint-down(md)
+  .topline
+    flex-wrap: wrap
+
+  .top-data
+    width: 50%
+    order: 3
+    margin-left: 0
+    margin-top: 15px
+
+  .top-phones
+    width: 50%
+    order: 4
+    margin-left: 0
+    margin-top: 15px
+    &:before
+      display: none
+
+  .worktime
+    width: 50%
 
 // ≥768px
 +media-breakpoint-down(sm)
 
 // ≥480px
 +media-breakpoint-down(xs)
+  .worktime
+    width: 100%
+    order: 2
+    text-align: right
+    margin-top: 15px
+
+  .hamburger
+    margin-left: auto
+
+  .top-data
+    width: 100%
+    text-align: right
+
+  .top-phones
+    width: 100%
+
+@media (max-width: 400px)
+  .main-head
+    .container
+      flex-wrap: wrap
+      padding: 0
+
+  .head-left
+    width: 100%
+    padding: 30px 15px
+
+  .head-right
+    width: 100%
+    padding: 0 15px
+
+  .worktime
+    width: 50%
+    text-align: left
+    order: unset
+    margin-top: 0
+
+  .top-data
+    text-align: center
+
+  .top-phones
+    text-align: center
+
+  .hamburger
+    top: -5px
 
 
 /*==========  Mobile First  ==========*/
