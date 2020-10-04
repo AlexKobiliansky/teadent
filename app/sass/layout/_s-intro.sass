@@ -1,0 +1,96 @@
+.s-intro
+  padding: 84px 0 130px
+  overflow: hidden
+  background-color: #dfe2e9
+  .container
+    position: relative
+
+.intro-img
+  position: absolute
+  top: -84px
+  right: -76px
+
+.intro-content
+  position: relative
+  z-index: 2
+  width: calc(50% + 30px)
+  left: -15px
+
+.intro-items-wrap
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: flex-start
+  margin-bottom: 35px
+
+.intro-item
+  width: 50%
+  padding-right: 26px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 50px
+  &-img
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    background-color: #fff
+    display: flex
+    justify-content: center
+    align-items: center
+    box-shadow: 0 0 0 9px rgba(#fff, .2)
+  &-content
+    width: calc(100% - 90px)
+    padding-left: 18px
+  &-title
+    font-size: 20px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 12px
+    line-height: 1.15
+  &-desc
+    color: #a6a8ad
+  .svg
+    height: 58px
+    width: auto
+    fill: $accent-green
+
+
+.intro-bottom
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0 15px
+  .btn
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: 700
+
+.intro-vk-link
+  display: flex
+  justify-content: space-between
+  align-items: center
+  color: #8f96a7
+  line-height: 1.2
+  min-width: 270px
+  width: 50%
+  padding-left: 15px
+  .img
+    width: 54px
+    height: 54px
+    border-radius: 50%
+    border: 1px solid #9198a9
+    display: flex
+    justify-content: center
+    align-items: center
+  .txt
+    width: calc(100% - 74px)
+    text-decoration: underline
+  .svg
+    height: 16px
+    width: auto
+    fill: #8f96a7
+  &:hover
+    color: #8f96a7
+    .txt
+      text-decoration: none

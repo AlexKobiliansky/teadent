@@ -3,6 +3,11 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1400px)
+  .intro-content
+    width: 50%
+    left: 0
+
 @media (max-width: 1350px)
   .head-right
     padding-left: 20px
@@ -16,6 +21,30 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .intro-img
+    right: -400px
+
+  .intro-content
+    width: 60%
+
+  .intro-item
+    margin-bottom: 30px
+    &-img
+      width: 70px
+      height: 70px
+    .svg
+      height: 42px
+    &-title
+      font-size: 16px
+    &-desc
+      font-size: 14px
+
+  .intro-bottom
+    .btn
+      font-size: 14px
+
+
   .head-left
     width: 200px
     padding: 5px
@@ -49,6 +78,10 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .intro-content
+    width: 100%
+
   .topline
     flex-wrap: wrap
 
@@ -71,9 +104,52 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .intro-bottom
+    flex-direction: column
+    align-items: flex-start
+    padding: 0
+    .btn
+      margin-bottom: 30px
+
+  .s-intro
+    padding: 50px 0
+
+  .intro-img
+    right: -600px
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .intro-items-wrap
+    margin-bottom: 0
+
+  .intro-bottom
+    .btn
+      padding: 15px 25px 13px
+      text-transform: none
+
+  .main-head
+    .container
+      padding-left: 0
+
+  .intro-item
+    width: 100%
+    &-title
+      font-size: 18px
+      margin-bottom: 5px
+    &-content
+      padding-left: 0
+    &-desc
+      color: #000
+
+  .intro-img
+    right: -500px
+    top: -50px
+    height: calc(100% + 100px)
+
+  .intro-vk-link
+    padding-left: 0
+
   .worktime
     width: 100%
     order: 2
