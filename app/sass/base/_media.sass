@@ -22,6 +22,35 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-garantee
+    .section-title
+      margin-bottom: 30px
+
+  .section-title
+    font-size: 36px
+
+  section
+    padding: 50px 0 70px
+
+  .garant-item
+    pointer-events: none
+    padding: 40px 30px 30px
+    justify-content: flex-start
+    height: 270px
+    &-img
+      display: none
+    &-icon
+      height: 60px
+      width: 60px
+      margin-bottom: 20px
+    &-title
+      font-size: 18px
+    &-desc
+      font-size: 16px
+
+
+
+
   .intro-img
     right: -400px
 
@@ -79,6 +108,16 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .garantee-wrap
+    grid-template-columns: repeat(2, 1fr)
+
+  .garant-item
+    &:nth-child(3)
+      border-top: none
+    &:nth-child(odd)
+      border-left: 1px solid #dfe2e9
+    &:nth-child(even)
+      border-left: none
   .intro-content
     width: 100%
 
@@ -104,6 +143,10 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .section-title
+    font-size: 28px
+
   .intro-bottom
     flex-direction: column
     align-items: flex-start
@@ -119,6 +162,28 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .section-title
+    font-size: 24px
+
+  section
+    padding: 50px 0
+
+  .s-garantee
+    .section-title
+      margin-bottom: 20px
+
+  .garant-item
+    padding: 30px 20px 20px
+    height: 220px
+    &-icon
+      width: 40px
+      height: 40px
+      margin-bottom: 15px
+    &-title
+      font-size: 14px
+    &-desc
+      font-size: 12px
 
   .intro-items-wrap
     margin-bottom: 0
@@ -167,6 +232,25 @@
     width: 100%
 
 @media (max-width: 400px)
+
+  .garantee-wrap
+    grid-template-columns: repeat(1, 1fr)
+
+  .garant-item
+    padding: 40px
+    border: 1px solid #dfe2e9!important
+    border-bottom: none!important
+    height: auto
+    align-items: center
+    text-align: center
+    &:last-child
+      border-bottom: 1px solid #dfe2e9!important
+    &-icon
+      width: 60px
+      height: auto
+      max-height: 60px
+      margin-bottom: 25px
+
   .main-head
     .container
       flex-wrap: wrap

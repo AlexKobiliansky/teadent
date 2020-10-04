@@ -1,0 +1,60 @@
+.s-garantee
+  .section-title
+    margin-bottom: 52px
+
+.garantee-wrap
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+
+.garant-item
+  border-bottom: 1px solid #dfe2e9
+  border-right: 1px solid #dfe2e9
+  height: 320px
+  padding: 50px
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  align-items: flex-start
+  overflow: hidden
+  position: relative
+  +mt(.4s)
+  cursor: crosshair
+  &:nth-child(3n+1)
+    border-left: 1px solid #dfe2e9
+  &:nth-child(1), &:nth-child(2), &:nth-child(3)
+    border-top: 1px solid #dfe2e9
+  &-icon
+    width: 83px
+    height: auto
+    fill: #8f96a7
+    max-height: 76px
+    margin-bottom: 30px
+    +mt(.4s)
+  &-title
+    font-size: 20px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 1.2
+    position: relative
+    z-index: 2
+  &-desc
+    font-size: 18px
+    margin-top: 7px
+    position: relative
+    z-index: 2
+  &-img
+    width: 220px
+    height: auto
+    fill: #00c869
+    position: absolute
+    right: 27px
+    top: 86px
+    opacity: 0
+    +mt(1s)
+  &:hover
+    background-color: $accent-green
+    color: #fff
+    .garant-item-icon
+      opacity: 0
+    .garant-item-img
+      opacity: 1
