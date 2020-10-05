@@ -26,6 +26,14 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .order-form
+    h2
+      font-size: 22px
+    .form-labels-wrap
+      padding: 0
+    .label-checkbox
+      padding: 0
+
   .owl-carousel
     .owl-nav
       button.owl-prev, button.owl-next
@@ -127,6 +135,18 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .order-form
+    .form-labels-wrap
+      flex-direction: column
+      padding: 0 100px
+    label
+      width: 100%
+      margin-bottom: 20px
+    .label-checkbox
+      align-items: center
+      span
+        padding-top: 0
+
   .services-slider
     width: calc(100% + (100vw - 690px)/2)
 
@@ -166,6 +186,10 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .order-form
+    .form-labels-wrap
+      padding: 0
+
   .services-slider
     width: calc(100% + (100vw - 510px)/2)
     .owl-nav
@@ -191,7 +215,17 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-order
+    padding-bottom: 60px
 
+  .order-form
+    .btn
+      padding-left: 25px
+      padding-right: 25px
+
+  .order-desc
+    font-size: 14px
+    margin-bottom: 40px
 
   .services-slider
     width: calc(100% + 15px)
@@ -268,6 +302,15 @@
     width: 100%
 
 @media (max-width: 400px)
+
+  .order-form
+    input
+      font-size: 18px
+    h2
+      font-size: 18px
+    .btn
+      font-size: 14px
+      padding: 20px 15px 18px
 
   .service-slide
     width: 280px

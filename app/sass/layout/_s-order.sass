@@ -1,0 +1,70 @@
+.s-order
+  background-color: #626876
+  color: #fff
+  text-align: center
+  padding-bottom: 100px
+  h2
+    font-size: 30px
+    text-transform: uppercase
+    margin-bottom: 20px
+    line-height: 1.2
+    span
+      color: $accent-green
+
+.order-desc
+  margin-bottom: 60px
+  line-height: 1.2
+
+.order-form
+  .form-labels-wrap
+    padding: 0 55px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 30px
+  .btn
+    padding: 20px 42px 18px
+    font-weight: 700
+    &:hover
+      &:before
+        transform: scale(11.3)
+  label
+    width: calc((100% - 450px)/2)
+  input
+    font-size: 20px
+    color: #fff
+    background-color: transparent
+    line-height: 1
+    padding: 8px 27px
+    border: none
+    border-bottom: 1px solid #fff
+    &::placeholder
+      color: #fff
+  .label-checkbox
+    width: 100%
+    padding: 0 55px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: 0
+    span
+      width: calc(100% - 40px)
+      text-align: left
+      font-size: 12px
+      color: #8f96a7
+      display: inline-block
+      padding-top: 5px
+  .jq-checkbox
+    width: 25px
+    height: 25px
+    border-radius: 0
+    background: transparent
+    border: 1px solid #8f96a7
+    box-shadow: none
+    position: relative
+  .jq-checkbox.checked .jq-checkbox__div
+    width: 15px
+    height: 9px
+    margin: 4px 0 0 4px
+    border-bottom: 2px solid #8f96a7
+    border-left: 2px solid #8f96a7

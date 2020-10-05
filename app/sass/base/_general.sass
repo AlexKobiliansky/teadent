@@ -151,4 +151,16 @@ section
       background-color: #fff
       background-image: url('../img/icons/slide-arrow-dark.png')
 
-
+form
+  input
+    width: 100%
+    &.error
+      border-color: red!important
+      color: red!important
+      &::placeholder
+        color: red!important
+  .help-block
+    display: none
+  .label-checkbox
+    input[type="checkbox"]
+      width: 1px
