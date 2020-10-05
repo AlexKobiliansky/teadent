@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (1.0+r73+1)"
+   sodipodi:docname="parallax-triangle.svg"
+   viewBox="0 0 133.33333 134.66667"
+   height="134.66667"
+   width="133.33333"
+   id="svg138"
+   version="1.1">
+  <g
+     transform="translate(251.44093,-12.754686)"
+     id="g146"
+     inkscape:label="Image"
+     inkscape:groupmode="layer">
+    <g
+       transform="translate(-251.44093,12.754686)"
+       id="g150">
+      <path
+         id="path152"
+         d="M 50.56316,86.837274 C 13.306868,51.566829 2.2895951,40.427612 3.8964951,39.65408 6.711302,38.299082 131.0622,1.2785777 131.43982,1.683155 c 0.53377,0.5718649 -30.3754,129.629105 -31.2517,130.487455 -0.470134,0.4605 -22.801366,-19.9395 -49.62496,-45.333336 z"
+         style="fill:#a6abb9;stroke-width:1.33333" />
+    </g>
+  </g>
+</svg>

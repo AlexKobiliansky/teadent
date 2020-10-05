@@ -14,6 +14,9 @@
 
 @media (max-width: 1400px)
 
+  .team-wrap
+    padding: 0 20px
+
   .services-slider
     width: calc(100% + 15px)
 
@@ -51,6 +54,25 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .s-team
+    padding-bottom: 20px
+
+  .team-wrap
+    grid-column-gap: 40px
+    padding: 0
+
+  .team-item
+    &-img
+      height: 400px
+    &-content
+      padding: 20px 20px 30px
+      left: -15px
+    &-title
+      font-size: 18px
+    &-desc
+      font-size: 16px
+
 
   .s-results
     padding-bottom: 150px
@@ -201,6 +223,9 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .team-wrap
+    grid-template-columns: repeat(2, 1fr)
+
   .results-img
     position: relative
     top: 0
@@ -333,6 +358,25 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-team
+    padding-bottom: 50px
+
+  .team-wrap
+    grid-gap: 20px
+
+  .team-item
+    &-img
+      height: 240px
+    &-content
+      top: 0
+      left: 0
+      padding: 15px
+    &-title
+      font-size: 16px
+      margin-bottom: 10px
+    &-desc
+      font-size: 14px
 
   .s-results
     padding-top: 0
@@ -478,6 +522,14 @@
     width: 100%
 
 @media (max-width: 400px)
+
+  .team-wrap
+    grid-template-columns: repeat(1, 1fr)
+
+  .team-item
+    &-img
+      height: 450px
+
 
   .s-results
     .btn-green
