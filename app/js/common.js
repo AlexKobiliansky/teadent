@@ -127,15 +127,30 @@ $(document).ready(function(){
         animateOut: "fadeOut",
         mouseDrag: false,
         navText: ['', ''],
-        // responsive: {
-        //     0: {
-        //         nav: false
-        //     },
-        //     480: {
-        //         nav: true
-        //     }
-        // }
     });
+
+    $('.serts-slider').owlCarousel({
+        loop:false,
+        nav:false,
+        items: 2,
+        dots: true,
+        navText: ['', ''],
+        margin: 45,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            400: {
+                items: 2,
+                margin: 25
+            },
+            480: {
+                margin: 45,
+            }
+        }
+    });
+
+    $('.serts-slider').photoswipe();
 
     $('.prices-tabs').tabs();
 

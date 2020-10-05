@@ -1,0 +1,89 @@
+.s-docs
+  background-color: $accent-creamy
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: calc(50% - 15px)
+    height: 100%
+    top: 0
+    right: 0
+    background-color: #8f96a7
+  h3
+    font-size: 36px
+    font-weight: 700
+    margin-bottom: 60px
+  .container
+    display: flex
+
+.serts-wrap
+  width: 50%
+  padding-right: 100px
+
+.sert-item
+  display: inline-block
+  border: 1px solid #d5d8e2
+  img
+    position: relative
+    top: -10px
+    left: -10px
+
+.serts-slider
+  width: calc(100% + 15px)
+  .owl-stage
+    padding-top: 10px
+    &-outer
+      width: calc(100% + 15px)
+      padding-left: 10px
+  .owl-dots
+    text-align: center
+    margin-top: 45px
+    button.owl-dot
+      display: inline-block
+      width: 30px
+      height: 5px
+      background-color: #8f96a7
+      margin: 0 4px
+      cursor: pointer
+      +mt(.3s)
+      &.active
+        width: 76px
+        background-color: $accent-green
+
+
+
+.docs-wrap
+  width: 50%
+  position: relative
+  color: #fff
+  padding-left: 130px
+
+.docs-items-wrap
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-gap: 38px
+
+.doc-item
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+  height: 165px
+  border: 1px solid #fff
+  color: #fff
+  padding: 24px 22px 33px
+  font-size: 18px
+  font-weight: 700
+  .svg
+    height: 54px
+    width: auto
+    fill: #fff
+    +mt(.3s)
+  &:hover
+    background-color: #fff
+    color: $accent-green
+    .svg
+      fill: $accent-green
+
+
+
