@@ -1,0 +1,71 @@
+.s-prices
+  padding: 0
+  display: flex
+  .section-title
+    margin-bottom: 45px
+
+.prices-img
+  width: 610px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.prices-content
+  width: calc(100% - 610px)
+  padding: 110px 130px 80px
+
+.prices-wrap
+  width: 780px
+
+.prices-tabs
+  margin-bottom: 55px
+
+.prices-tabs-controls
+  display: flex
+  justify-content: flex-start
+  margin-bottom: 55px
+  border-bottom: 1px solid #e9eaee
+  li
+    flex: 1
+  a
+    display: block
+    text-align: center
+    font-size: 20px
+    padding: 15px 25px 13px
+    position: relative
+    color: $text
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 5px
+      background-color: $accent-green
+      left: 0
+      bottom: -1px
+      +mt(.3s)
+      opacity: 0
+    &:hover
+      color: $accent-green
+  .ui-tabs-active
+    a
+      color: $accent-green
+      &:after
+        opacity: 1
+
+.price-item
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  padding: 22px 40px 20px
+  font-size: 20px
+  line-height: 1.2
+  &-val
+    width: 180px
+    text-align: right
+    font-weight: 700
+  &-desc
+    width: calc(100% - 200px)
+  &:nth-child(odd)
+    background-color: $accent-creamy
+

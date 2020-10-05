@@ -3,6 +3,15 @@
 
 /*==========  Desktop First  ==========*/
 
+
+@media (max-width: 1600px)
+  .prices-content
+    padding-left: 50px
+    padding-right: 50px
+
+  .prices-wrap
+    width: 100%
+
 @media (max-width: 1400px)
 
   .services-slider
@@ -13,6 +22,23 @@
     left: 0
 
 @media (max-width: 1350px)
+
+
+  .price-item
+    font-size: 16px
+
+  .prices-tabs-controls
+    a
+      font-size: 18px
+
+  .prices-content
+    padding-top: 50px
+    padding-bottom: 50px
+    width: calc(100% - 500px)
+
+  .prices-img
+    width: 500px
+
   .head-right
     padding-left: 20px
     font-size: 14px
@@ -26,6 +52,26 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+
+  .prices-img
+    width: 400px
+
+  .prices-content
+    width: calc(100% - 400px)
+    padding-left: 35px
+    padding-right: 35px
+
+  .prices-tabs-controls
+    a
+      padding-left: 18px
+      padding-right: 18px
+      font-size: 16px
+
+  .price-item
+    &-val
+      width: 120px
+    &-desc
+      width: calc(100% - 130px)
 
   .stocks-slider
     .owl-nav
@@ -141,6 +187,12 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .prices-img
+    display: none
+
+  .prices-content
+    width: 100%
+
   .stock-slide
     &-img
       width: 200px
@@ -244,6 +296,35 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-prices
+    .btn-wrap
+      text-align: center
+
+  .prices-content
+    padding-left: 15px
+    padding-right: 15px
+
+  .prices-tabs
+    margin-bottom: 35px
+
+  .prices-tabs-controls
+    flex-wrap: wrap
+    justify-content: center
+    margin-bottom: 35px
+    li
+      flex: unset
+    a
+      font-size: 14px
+      padding: 10px 13px 9px
+
+  .price-item
+    font-size: 14px
+    padding: 18px 15px 16px
+    &-val
+      width: 100px
+    &-desc
+      width: calc(100% - 110px)
 
   .stocks-slider
     .owl-nav

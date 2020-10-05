@@ -118,6 +118,8 @@ $(document).ready(function(){
         }
     });
 
+    $('.prices-tabs').tabs();
+
     function heightses() {
         if ($(window).width()>480) {
         }
