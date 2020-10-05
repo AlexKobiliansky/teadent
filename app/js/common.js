@@ -120,6 +120,8 @@ $(document).ready(function(){
 
     $('.prices-tabs').tabs();
 
+    $('.s-intro').enllax();
+
     function heightses() {
         if ($(window).width()>480) {
         }
