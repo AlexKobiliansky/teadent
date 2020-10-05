@@ -1,0 +1,74 @@
+
+.s-services
+  background-color: $accent-creamy
+  .section-title
+    margin-bottom: 75px
+
+
+.services-slider
+  width: calc(100% + (100vw - 1370px)/2)
+  .owl-nav
+    position: absolute
+    top: -123px
+    left: 340px
+    button.owl-next
+      margin-left: 13px
+
+
+.service-slide
+  width: 320px
+  background-color: #8f96a7
+  color: #fff
+  +mt(.3s)
+  &-content
+    padding: 45px 40px 80px
+    position: relative
+  &-title
+    font-size: 24px
+    font-weight: 700
+    margin-bottom: 15px
+  &-desc
+    line-height: 1.2
+  &-btn
+    position: absolute
+    bottom: -40px
+    left: 50%
+    transform: translateX(-50%)
+  &-app
+    opacity: 0
+    z-index: 2
+    background-color: #fff
+    text-transform: uppercase
+    font-weight: 700
+    padding: 34px 24px 30px
+    white-space: nowrap
+    border-radius: 40px
+    color: $text
+    +mt(.3s)
+    &:hover
+      color: $text
+      background-color: darken($accent-creamy, 15%)
+  &-plus
+    width: 80px
+    height: 80px
+    background-color: #626876
+    border-radius: 50%
+    background-image: url('../img/icons/plus-icon.png')
+    background-position: center center
+    background-repeat: no-repeat
+    opacity: 1
+    +mt(.3s)
+  &-img
+    height: 190px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &:hover
+    background-color: $accent-green
+    .service-slide-plus
+      opacity: 0
+    .service-slide-app
+      opacity: 1
+
+

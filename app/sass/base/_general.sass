@@ -129,3 +129,26 @@ section
   font-weight: 700
   margin-bottom: 0
 
+.owl-carousel
+  .owl-nav
+    button.owl-prev, button.owl-next
+      width: 48px
+      height: 48px
+      cursor: pointer
+      +mt(.3s)
+      border-radius: 50%
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 12px 20px
+      &:hover
+        background-color: $accent-green
+        background-image: url('../img/icons/slide-arrow-white.png')
+    button.owl-prev
+      background-color: #8f96a7
+      background-image: url('../img/icons/slide-arrow-white.png')
+      transform: rotate(180deg)
+    button.owl-next
+      background-color: #fff
+      background-image: url('../img/icons/slide-arrow-dark.png')
+
+

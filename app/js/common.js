@@ -76,6 +76,37 @@ $(document).ready(function(){
         }, 'xml');
     });
 
+    $('.services-slider').owlCarousel({
+        loop:true,
+        nav:true,
+        // items: 1,
+        dots: false,
+        navText: ['', ''],
+        margin: 30,
+        autoWidth: true,
+        responsive: {
+            0: {
+                margin: 10,
+            },
+            400: {
+                margin: 30
+            }
+        }
+    });
+
+    function heightses() {
+        if ($(window).width()>480) {
+        }
+
+        $('.service-slide-content').equalHeights();
+    }
+
+    $(window).resize(function() {
+        heightses();
+    });
+
+    heightses();
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
