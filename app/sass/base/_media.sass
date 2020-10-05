@@ -26,6 +26,12 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+
+  .stocks-slider
+    .owl-nav
+      top: -68px
+      left: 150px
+
   .order-form
     h2
       font-size: 22px
@@ -135,6 +141,23 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .stock-slide
+    &-img
+      width: 200px
+      height: 200px
+      margin-bottom: 30px
+    &-link
+      width: 180px
+      height: 180px
+      .svg
+        height: 44px
+      span
+        font-size: 18px
+    &-title
+      font-size: 24px
+    &-desc
+      font-size: 14px
+
   .order-form
     .form-labels-wrap
       flex-direction: column
@@ -186,6 +209,13 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .stocks-slider
+    .owl-nav
+      top: -62px
+      left: 120px
+      button.owl-next
+        margin-left: 7px
+
   .order-form
     .form-labels-wrap
       padding: 0
@@ -214,6 +244,11 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .stocks-slider
+    .owl-nav
+      left: auto
+      right: 15px
 
   .s-order
     padding-bottom: 60px

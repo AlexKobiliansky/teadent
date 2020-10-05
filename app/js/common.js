@@ -94,6 +94,30 @@ $(document).ready(function(){
         }
     });
 
+
+    $('.stocks-slider').owlCarousel({
+        loop:true,
+        nav:true,
+        items: 4,
+        dots: false,
+        navText: ['', ''],
+        margin: 30,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            480: {
+                items: 2,
+            },
+            768: {
+                items: 3,
+            },
+            1200: {
+                items: 4,
+            }
+        }
+    });
+
     function heightses() {
         if ($(window).width()>480) {
         }
