@@ -52,6 +52,15 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-results
+    padding-bottom: 150px
+    padding-top: 150px
+    .section-title
+      font-size: 30px
+
+  .results-img
+    width: 650px
+
   .gar-par, .serv-par
     display: none
 
@@ -192,6 +201,29 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .results-img
+    position: relative
+    top: 0
+    left: 0
+    width: 100%
+    max-width: 100%
+    height: auto
+    margin-bottom: 50px
+
+  .results-notice
+    padding-left: 0
+
+  .s-results
+    padding-top: 50px
+    padding-bottom: 80px
+    text-align: center
+    .section-title
+      margin-bottom: 50px!important
+    ul
+      text-align: left
+    .row
+      flex-direction: column-reverse
+
   .prices-img
     display: none
 
@@ -301,6 +333,29 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-results
+    padding-top: 0
+    padding-bottom: 50px
+    .section-title
+      font-size: 24px
+      margin-bottom: 30px!important
+    ul
+      font-size: 18px
+      margin-bottom: 30px
+      li
+        &:before
+          top: -4px
+    .btn-green
+      font-size: 16px
+      padding: 16px 20px 14px
+
+  .results-notice
+    font-size: 18px
+    margin-bottom: 30px
+
+  .results-img
+    margin-bottom: 30px
 
   .s-prices
     .btn-wrap
@@ -423,6 +478,10 @@
     width: 100%
 
 @media (max-width: 400px)
+
+  .s-results
+    .btn-green
+      font-size: 14px
 
   .order-form
     input
