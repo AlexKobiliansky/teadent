@@ -55,6 +55,28 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-about
+    padding: 50px 0
+
+  .about-left
+    padding-right: 0
+
+  .about-desc
+    font-size: 16px
+
+  .about-slide
+    height: 440px
+
+  .about-slider
+    .owl-nav
+      left: 20px
+      bottom: 15px
+      button.owl-next
+        margin-left: 10px
+    .owl-dots
+      right: 20px
+      bottom: 25px
+
   .s-team
     padding-bottom: 20px
 
@@ -223,6 +245,10 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .about-left
+    margin-bottom: 50px
+    padding-top: 0
+
   .team-wrap
     grid-template-columns: repeat(2, 1fr)
 
@@ -358,6 +384,18 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .about-slide
+    height: 300px
+
+  .about-slider
+    .owl-dots
+      bottom: 30px
+      button.owl-dot
+        height: 3px
+        width: 20px
+        &.active
+          width: 50px
 
   .s-team
     padding-bottom: 50px
@@ -522,6 +560,9 @@
     width: 100%
 
 @media (max-width: 400px)
+
+  .about-slide
+    height: 240px
 
   .team-wrap
     grid-template-columns: repeat(1, 1fr)

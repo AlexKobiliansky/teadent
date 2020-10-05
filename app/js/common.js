@@ -118,6 +118,25 @@ $(document).ready(function(){
         }
     });
 
+    $('.about-slider').owlCarousel({
+        loop:true,
+        nav:true,
+        items: 1,
+        dots: true,
+        animateIn: "fadeIn",
+        animateOut: "fadeOut",
+        mouseDrag: false,
+        navText: ['', ''],
+        // responsive: {
+        //     0: {
+        //         nav: false
+        //     },
+        //     480: {
+        //         nav: true
+        //     }
+        // }
+    });
+
     $('.prices-tabs').tabs();
 
     $('.s-intro').enllax();
