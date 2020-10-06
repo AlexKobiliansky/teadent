@@ -169,6 +169,8 @@ $(document).ready(function(){
 
     heightses();
 
+    $('.preloader').fadeOut();
+
     $(".main-mnu a, .footer-nav a").mPageScroll2id();
 
 
@@ -188,16 +190,72 @@ $(document).ready(function(){
 
     $('input[type="checkbox"]').styler();
 
+
+    $("a[href='#popup-form-service']").on('click', function(){
+        let value = $(this).data('val');
+        let img = $(this).data('img');
+
+        $('#popup-service-val').val(value);
+        $('#popup-service-title').text(value);
+        $('#popup-img').attr('src', img);
+    });
+
+    $("a[href='#popup-form-stock']").on('click', function(){
+        let value = $(this).data('val');
+
+        $('#popup-stock-val').val(value);
+        $('#popup-stock-title').text(value);
+    })
+
+    $(function() {
+        $("a[href='#popup-form'], a[href='#popup-form-service'], a[href='#popup-form-order'], a[href='#popup-form-stock']").magnificPopup({
+            type: "inline",
+            fixedContentPos: !1,
+            fixedBgPos: !0,
+            overflowY: "auto",
+            closeBtnInside: !0,
+            preloader: !1,
+            midClick: !0,
+            removalDelay: 300,
+            mainClass: "my-mfp-zoom-in"
+        })
+    });
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
+        th.find('.btn').prop('disabled','disabled');
 
         $.ajax({
             type: "POST",
             url: "mail.php", //Change
             data: th.serialize()
         }).done(function() {
+            $.magnificPopup.open({
+                items: {
+                    src: '#popup-greeting'
+                },
+                type: 'inline',
 
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-request'
+            }, 0);
+
+            setTimeout(function(){
+                $.magnificPopup.close();
+            }, 2000);
+
+            th.find(".btn").removeAttr('disabled');
+            th.trigger("reset");
         });
         return false;
     });
@@ -263,6 +321,10 @@ $(document).ready(function(){
             });
         }, 2000);
     }
+
+
+
+
 
 
 });

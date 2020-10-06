@@ -27,6 +27,21 @@
 </head>
 
 <body>
+<!-- preloader -->
+<div class="preloader">
+	<div class="sk-cube-grid">
+		<div class="sk-cube sk-cube-1"></div>
+		<div class="sk-cube sk-cube-2"></div>
+		<div class="sk-cube sk-cube-3"></div>
+		<div class="sk-cube sk-cube-4"></div>
+		<div class="sk-cube sk-cube-5"></div>
+		<div class="sk-cube sk-cube-6"></div>
+		<div class="sk-cube sk-cube-7"></div>
+		<div class="sk-cube sk-cube-8"></div>
+		<div class="sk-cube sk-cube-9"></div>
+	</div>
+</div>
+<!-- preloader -->
 <div id="page-container">
 	<!-- mobile-mnu -->
 	<div id="mobile-mnu" data-logo="img/logo.jpg">
@@ -61,7 +76,7 @@
 						<a href="tel:+88172501129">8 (8172) 50-11-29</a>
 						<a href="tel:+89115026829">8 (911) 502-68-29</a>
 					</div>
-					<a href="#0" class="btn btn-green">Звоните сейчас</a>
+					<a href="#popup-form" class="btn btn-green">Звоните сейчас</a>
 					<a href="#0" class="vk-link" target="_blank">
 						<img src="img/icons/vk-icon.svg" alt="Вконтакте" class="svg">
 					</a>
@@ -146,7 +161,7 @@
 				</div>
 
 				<div class="intro-bottom">
-					<a href="#)" class="btn btn-grey">Записаться на прием</a>
+					<a href="#popup-form-order" class="btn btn-grey">Записаться на прием</a>
 
 					<a href="#)" class="intro-vk-link">
 						<span class="img">
@@ -250,7 +265,7 @@
 					<div class="service-slide-content">
 						<div class="service-slide-title">Терапия</div>
 						<div class="service-slide-desc">Лечение всех форм кариеса – начиная с незаметного невооруженным глазом поверхностного кариеса, заканчивая лечением запущенных форм заболевания, когда воспаление поражает нерв или же ткани, окружающие зуб. </div>
-						<a href="#0" class="service-slide-app service-slide-btn">Записаться на прием</a>
+						<a href="#popup-form-service" class="service-slide-app service-slide-btn" data-val="Терапия" data-img="img/service-img-1.jpg">Записаться на прием</a>
 						<div class="service-slide-plus service-slide-btn"></div>
 					</div>
 					<div class="service-slide-img">
@@ -264,7 +279,7 @@
 					<div class="service-slide-content">
 						<div class="service-slide-title">Хирургия</div>
 						<div class="service-slide-desc">Мы боремся за каждый зуб, но в некоторых случаях сохранить зуб невозможно и его удаляют, включая удаление зубов по ортопедическим показаниям, дистопированных и ретенированных зубов, также хирургические операции.</div>
-						<a href="#0" class="service-slide-app service-slide-btn">Записаться на прием</a>
+						<a href="#popup-form-service" class="service-slide-app service-slide-btn" data-val="Хирургия" data-img="img/service-img-2.jpg">Записаться на прием</a>
 						<div class="service-slide-plus service-slide-btn"></div>
 					</div>
 					<div class="service-slide-img">
@@ -379,7 +394,7 @@
 				<div class="stock-slide">
 					<div class="stock-slide-img">
 						<img src="img/stocks-img-1.jpg" alt="alt">
-						<a href="#0" class="stock-slide-link">
+						<a href="#popup-form-stock" class="stock-slide-link" data-val="По дружбе">
 							<img src="img/icons/stock-icon.svg" alt="alt" class="svg">
 							<span>Записаться</span>
 						</a>
@@ -393,7 +408,7 @@
 				<div class="stock-slide">
 					<div class="stock-slide-img">
 						<img src="img/stocks-img-2.jpg" alt="alt">
-						<a href="#0" class="stock-slide-link">
+						<a href="#popup-form-stock" class="stock-slide-link" data-val="Забота">
 							<img src="img/icons/stock-icon.svg" alt="alt" class="svg">
 							<span>Записаться</span>
 						</a>
@@ -542,7 +557,7 @@
 					</ul>
 					<div class="results-notice">Улыбайтесь вместе с «ТеаДент»</div>
 					<div class="btn-wrap">
-						<a href="#0" class="btn btn-green btn-large">Записать на бесплатную консультацию</a>
+						<a href="#popup-form" class="btn btn-green btn-large">Записать на бесплатную консультацию</a>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -851,8 +866,8 @@
 					<div class="footer-topright">
 						<a href="#0" class="vk-link" target="_blank">
 							<img src="img/icons/vk-icon.svg" alt="alt" class="svg">
-							<a href="#)" class="btn btn-green">Звоните сейчас</a>
 						</a>
+						<a href="#popup-form" class="btn btn-green">Звоните сейчас</a>
 					</div>
 					<div class="footer-bottomright">
 						Имеются противопоказания, <br>необходима консультация специалиста
@@ -865,6 +880,145 @@
 
 </div>
 
+<div class="hidden">
+	<form class="contact-form popup-form" id="popup-form">
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="TEADENT">
+		<input type="hidden" name="admin_email" value="alexey.kobilianskiy@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка с сайта TEADENT">
+		<!-- END Hidden Required Fields -->
+
+		<input type="hidden" name="Форма" value="Заказ обратного звонка">
+
+		<h3>Оставьте заявку</h3>
+
+		<div class="popup-desc">И мы свяжемся с Вами в ближайшее время!</div>
+
+		<div class="form-labels-wrap">
+			<label>
+				<input type="text" placeholder="Ваше имя" name="Имя" autocomplete="off" data-validation="custom"
+					   data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,50}$">
+			</label>
+			<label>
+				<input type="text" class="user-phone" name="Телефон" placeholder="Номер телефона"
+					   autocomplete="off" data-validation="custom"
+					   data-validation-regexp="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+			</label>
+		</div>
+
+		<div class="btn-wrap">
+			<button type="submit" class="btn btn-green">Заказать звонок</button>
+		</div>
+	</form>
+
+	<form class="contact-form popup-form" id="popup-form-order">
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="TEADENT">
+		<input type="hidden" name="admin_email" value="alexey.kobilianskiy@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка с сайта TEADENT">
+		<!-- END Hidden Required Fields -->
+
+		<input type="hidden" name="Форма" value="Запись на прием">
+
+		<h3>Оставьте заявку</h3>
+
+		<div class="popup-desc">И мы свяжемся с Вами в ближайшее время!</div>
+
+		<div class="form-labels-wrap">
+			<label>
+				<input type="text" placeholder="Ваше имя" name="Имя" autocomplete="off" data-validation="custom"
+					   data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,50}$">
+			</label>
+			<label>
+				<input type="text" class="user-phone" name="Телефон" placeholder="Номер телефона"
+					   autocomplete="off" data-validation="custom"
+					   data-validation-regexp="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+			</label>
+		</div>
+
+		<div class="btn-wrap">
+			<button type="submit" class="btn btn-green">Оставить заявку</button>
+		</div>
+	</form>
+
+	<form class="contact-form popup-form popup-form-service" id="popup-form-service">
+
+		<div class="popup-img">
+			<img src="img/service-img-3.jpg" alt="alt" id="popup-img">
+		</div>
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="TEADENT">
+		<input type="hidden" name="admin_email" value="alexey.kobilianskiy@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка с сайта TEADENT">
+		<!-- END Hidden Required Fields -->
+
+		<input type="hidden" name="Форма" value="Запись на прием">
+		<input type="hidden" name="Услуга" value="Название услуги" id="popup-service-val">
+
+		<h3>Запись на услугу: <span id="popup-service-title">Название услуги</span></h3>
+
+		<div class="popup-desc">Оставьте Ваши контактные данные. Мы свяжемся с Вами и запишем на прием к специалисту</div>
+
+		<div class="form-labels-wrap">
+			<label>
+				<input type="text" placeholder="Ваше имя" name="Имя" autocomplete="off" data-validation="custom"
+					   data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,50}$">
+			</label>
+			<label>
+				<input type="text" class="user-phone" name="Телефон" placeholder="Номер телефона"
+					   autocomplete="off" data-validation="custom"
+					   data-validation-regexp="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+			</label>
+		</div>
+
+		<div class="btn-wrap">
+			<button type="submit" class="btn btn-green">Записаться на прием</button>
+		</div>
+	</form>
+
+	<form class="contact-form popup-form" id="popup-form-stock">
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="TEADENT">
+		<input type="hidden" name="admin_email" value="alexey.kobilianskiy@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка с сайта TEADENT">
+		<!-- END Hidden Required Fields -->
+
+		<input type="hidden" name="Форма" value="Запись по акции">
+		<input type="hidden" name="Название акции" value="Название акции" id="popup-stock-val">
+
+		<h3>Запись по акции: <span id="popup-stock-title">Название акции</span></h3>
+
+		<div class="popup-desc">Оставьте Ваши контактные данные. Мы свяжемся с Вами в ближайшее время</div>
+
+		<div class="form-labels-wrap">
+			<label>
+				<input type="text" placeholder="Ваше имя" name="Имя" autocomplete="off" data-validation="custom"
+					   data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,50}$">
+			</label>
+			<label>
+				<input type="text" class="user-phone" name="Телефон" placeholder="Номер телефона"
+					   autocomplete="off" data-validation="custom"
+					   data-validation-regexp="\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+			</label>
+		</div>
+
+		<div class="btn-wrap">
+			<button type="submit" class="btn btn-green">Оставить заявку</button>
+		</div>
+	</form>
+
+	<div class="popup-form popup-form-greeting" id="popup-greeting">
+		<h3>Заявка отправлена!</h3>
+
+		<div class="popup-desc">
+			Наши специалисты свяжутся с Вами в ближайшее время!
+		</div>
+	</div>
+</div>
 
 <!-- ======= HTML FOR PHOTOSWIPE ======= -->
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
