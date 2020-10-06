@@ -14,6 +14,13 @@
 
 @media (max-width: 1400px)
 
+  .s-form
+    padding-top: 70px
+    &-img
+      width: 650px
+      left: 15px
+      top: 0
+
   .team-wrap
     padding: 0 20px
 
@@ -54,6 +61,38 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+
+  .s-form
+    &-right
+      padding-left: 0
+    &-img
+      width: 450px
+      left: 0
+    &-phone
+      font-size: 24px
+      padding-left: 30px
+      &:before
+        width: 16px
+        height: 16px
+        top: 2px
+    &-address
+      font-size: 16px
+      margin-bottom: 30px
+
+  .section-form
+    h3
+      font-size: 24px
+    &-desc
+      font-size: 16px
+      margin-bottom: 30px
+    input
+      font-size: 16px
+      padding: 12px 20px 10px
+    label
+      margin-bottom: 15px
+    .btn
+      font-size: 18px
 
   .s-docs
     h3
@@ -265,6 +304,24 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-form
+    text-align: center
+    &-img
+      margin-left: auto
+      margin-right: auto
+      display: block
+      margin-bottom: 50px
+
+  .section-form
+    text-align: center
+    h3
+      font-size: 30px
+    label
+      margin-bottom: 20px
+    .label-checkbox
+      span
+        text-align: left
+
   .s-docs
     overflow: hidden
     padding: 0
@@ -435,6 +492,17 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-form
+    padding-top: 50px
+    padding-bottom: 50px
+    &-img
+      width: 100%
+      max-width: 100%
+
+  .section-form
+    h3
+      font-size: 24px
 
   .s-docs
     h3
@@ -625,6 +693,21 @@
     width: 100%
 
 @media (max-width: 400px)
+
+  .s-form
+    &-img
+      margin-bottom: 30px
+
+  .section-form
+    h3
+      font-size: 20px
+    &-desc
+      font-size: 14px
+    .label-checkbox
+      span
+        font-size: 10px
+    .btn
+      font-size: 15px
 
   .docs-items-wrap
     grid-template-columns: repeat(1, 1fr)
