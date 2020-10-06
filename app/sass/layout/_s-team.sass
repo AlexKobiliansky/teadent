@@ -1,9 +1,33 @@
 .s-team
   background-color: $accent-creamy
   padding-bottom: 75px
+  overflow: hidden
   .section-title
     margin-bottom: 85px
     line-height: 1.2
+  .container
+    position: relative
+
+.team-par
+  position: absolute
+  z-index: 2
+  &.triangle
+    width: 100px
+  &.crest
+    width: 80px
+  &-1
+    top: 333px
+    left: -25px
+  &-2
+    left: 26%
+    top: 500px
+  &-3
+    top: 450px
+    left: 60%
+  &-4
+    top: 500px
+    right: -5px
+
 
 .team-wrap
   display: grid

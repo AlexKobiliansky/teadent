@@ -14,6 +14,12 @@
 
 @media (max-width: 1400px)
 
+  .form-par
+    &-4
+      left: 30px
+    &-5
+      left: 10px
+
   .s-form
     padding-top: 70px
     &-img
@@ -62,6 +68,25 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .form-par
+    display: none
+
+  .team-par
+    &.triangle
+      width: 80px
+    &.crest
+      width: 60px
+    &-1
+      top: 250px
+    &-2
+      top: 350px
+    &-3
+      top: 300px
+    &-4
+      top: 300px
+
+  .result-par
+    display: none
 
   .footer-wrap
     padding: 40px 0 40px 50px
@@ -316,6 +341,30 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .result-par
+    display: block
+    &-1
+      width: 150px
+      height: 150px
+      right: 45px
+      top: -50px
+    &-2
+      right: -30px
+      top: -40px
+    &-3
+      width: 75px
+      height: 75px
+      right: -66px
+      top: -8px
+    &-4
+      width: 130px
+      height: 130px
+      left: 50px
+      top: 401px
+    &-5
+      left: 193px
+      top: 548px
+
   .foot-logo-container
     width: 200px
     padding-left: 5px
@@ -484,6 +533,16 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .about-par
+    width: 400px
+    bottom: 100px
+
+  .team-par
+    display: none
+
+  .result-par
+    display: none
+
   #map
     height: 400px
 
@@ -541,6 +600,37 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .about-par
+    bottom: 300px
+
+  .result-par
+    //display: block
+    &-1
+      width: 90px
+      height: 90px
+      right: 45px
+      top: 15px
+    &-2
+      right: 19px
+      top: 14px
+      width: 30px
+      height: 30px
+    &-3
+      width: 50px
+      height: 50px
+      right: -10px
+      top: 33px
+    &-4
+      width: 75px
+      height: 75px
+      left: 30px
+      top: 164px
+    &-5
+      width: 50px
+      height: 50px
+      left: 109px
+      top: 226px
 
   .foot-logo-container
     display: block
