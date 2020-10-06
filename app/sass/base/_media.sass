@@ -63,6 +63,18 @@
 +media-breakpoint-down(lg)
 
 
+  .footer-wrap
+    padding: 40px 0 40px 50px
+    flex-wrap: wrap
+
+  .footer-right
+    margin-top: 30px
+    flex-direction: row
+    width: 100%
+    align-items: center
+    .vk-link
+      margin-right: 30px
+
   .s-form
     &-right
       padding-left: 0
@@ -304,6 +316,25 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .foot-logo-container
+    width: 200px
+    padding-left: 5px
+    padding-right: 5px
+    a
+      font-size: 13px
+      img
+        max-width: 100%
+        margin-bottom: 20px
+
+  .footer-wrap
+    width: calc(100% - 200px)
+    padding-top: 30px
+    padding-left: 30px
+
+  .footer-bottomright
+    font-size: 12px
+    text-align: right
+
   .s-form
     text-align: center
     &-img
@@ -453,6 +484,24 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  #map
+    height: 400px
+
+  .main-foot
+    .container
+      flex-direction: column
+
+  .footer-wrap
+    width: 100%
+    padding-left: 0
+
+  .footer-topright
+    margin-right: 60px
+
+  .foot-logo-container
+    display: none
+
+
   .docs-wrap
     &:before
       left: calc(0px - (100vw - 510px)/2)
@@ -492,6 +541,34 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .foot-logo-container
+    display: block
+    width: calc(100% + 30px)
+    position: relative
+    left: -15px
+    text-align: center
+    padding-top: 30px
+    padding-bottom: 30px
+
+  .footer-left
+    width: 100%
+    text-align: center
+    margin-bottom: 30px
+
+  .footer-nav
+    width: 100%
+    text-align: center
+
+  .footer-right
+    width: 100%
+    flex-direction: column
+
+  .footer-topright
+    margin-right: 0
+    margin-bottom: 20px
+  .footer-bottomright
+    text-align: center
 
   .s-form
     padding-top: 50px
