@@ -169,6 +169,8 @@ $(document).ready(function(){
 
     heightses();
 
+    $(".main-mnu a, .footer-nav a").mPageScroll2id();
+
 
     $.validate({
         form : '.contact-form',
